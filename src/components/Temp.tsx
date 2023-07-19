@@ -21,7 +21,7 @@ export function Temp() {
   }, [])
 
   return (
-    <main className={`flex flex-col items-center justify-center h-screen ${isDaytime ? '#33DDFF' : 'bg-blue-950'}`}>
+    <main className={`flex flex-col items-center justify-center h-screen ${isDaytime ? 'bg-blu-50' : 'bg-blue-950'}`}>
       <p className={`text-xl font-bold ${isDaytime ? 'text-black' : 'text-white'}`}>Temperatura e umidade interna:</p>
       <div className={`flex items-center justify-center space-x-2 ${isDaytime ? 'text-black' : 'text-white'}`}>
                    {isDaytime ?  <Sun size={56} color="yellow" /> : <Moon size={56} color="white" />}        
